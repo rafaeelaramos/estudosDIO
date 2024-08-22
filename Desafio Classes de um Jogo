@@ -1,0 +1,35 @@
+class aventuraHeroi:
+
+    def __init__(self, nome, idade, tipo):
+        self.nome = nome
+        self.idade = idade
+        self.tipo = tipo
+    
+    def atacar(self):
+        if self.tipo == 'mago':
+            ataque = "magia"
+        
+        elif self.tipo == 'guerreiro':
+            ataque = "espada"
+            
+        elif self.tipo == 'monge':
+            ataque = "artes marciais"
+            
+        elif self.tipo == 'ninja':
+            ataque = "shuriken"
+        
+        else:
+            ataque = "ataque desconhecido"
+        
+        print(f"O {self.tipo} atacou usando {ataque}")
+
+#Exemplo de uso
+
+testGuerreiro = aventuraHeroi ('Xena', 35, 'guerreiro')
+testGuerreiro.atacar()
+
+testMago = aventuraHeroi ('Harry', 28, "mago")
+testMago.atacar()
+
+print(testMago)
+print(testGuerreiro)
